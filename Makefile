@@ -1,5 +1,5 @@
 OUT_ZIP=KISS.zip
-LNCR_EXE=Void.exe
+LNCR_EXE=KISS.exe
 
 DLR=curl
 DLR_FLAGS=-L
@@ -17,14 +17,14 @@ $(OUT_ZIP): ziproot
 ziproot: Launcher.exe rootfs.tar.gz
 	@echo -e '\e[1;31mBuilding ziproot...\e[m'
 	mkdir ziproot
-	cp Launcher.exe ziproot/${LNCR_EXE}
+	cp ${LNCR_EXE} ziproot/${LNCR_EXE}
 	cp rootfs.tar.gz ziproot/
 
 exe: Launcher.exe
 Launcher.exe: icons.zip
 	@echo -e '\e[1;31mExtracting Launcher.exe...\e[m'
 	unzip icons.zip $(LNCR_ZIP_EXE)
-	mv $(LNCR_ZIP_EXE) Launcher.exe
+	mv $(LNCR_ZIP_EXE) ${LNCR_EXE}
 
 icons.zip:
 	@echo -e '\e[1;31mDownloading icons.zip...\e[m'
@@ -40,7 +40,6 @@ rootfs: base.tar.xz
 	mkdir rootfs
 	sudo tar -xpf base.tar.xz -C rootfs
 	sudo cp -f /etc/resolv.conf rootfs/etc/resolv.conf
-	sudo chroot rootfs /usr/bin/kiss u
 	sudo rm rootfs/etc/resolv.conf
 	sudo chmod +x rootfs
 
