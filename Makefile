@@ -17,7 +17,7 @@ $(OUT_ZIP): ziproot
 ziproot: Launcher.exe rootfs.tar.gz
 	@echo -e '\e[1;31mBuilding ziproot...\e[m'
 	mkdir ziproot
-	cp Launcher.exe ziproot/${LNCR_EXE}
+	cp ${LNCR_EXE} ziproot/${LNCR_EXE}
 	cp rootfs.tar.gz ziproot/
 
 exe: Launcher.exe
