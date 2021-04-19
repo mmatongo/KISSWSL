@@ -24,8 +24,7 @@ exe: Launcher.exe
 Launcher.exe: icons.zip
 	@echo -e '\e[1;31mExtracting Launcher.exe...\e[m'
 	unzip icons.zip $(LNCR_ZIP_EXE)
-	mv $(LNCR_ZIP_EXE) Launcher.exe
-	mv Launcher.exe ${LNCR_EXE}
+	mv $(LNCR_ZIP_EXE) ${LNCR_EXE}
 
 icons.zip:
 	@echo -e '\e[1;31mDownloading icons.zip...\e[m'
