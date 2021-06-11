@@ -26,4 +26,4 @@ jobs:
           tag_name="${GITHUB_REF#refs/tags/}"
           hub release create $artifacts -m "$tag_name" "$tag_name"
         env:
-          GITHUB_TOKEN: ${{ secrets.SECRET_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
