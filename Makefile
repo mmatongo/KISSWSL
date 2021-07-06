@@ -1,5 +1,5 @@
 OUT_ZIP=KISS.zip
-LNCR_EXE=Void.exe
+LNCR_EXE=Alpine.exe
 
 
 ARCH=x64
