@@ -1,13 +1,14 @@
 # KISSWSL
 KISS Linux WSL
-This repo is heavily based on [this on](https://github.com/am11/VoidMuslWSL).
+
+This repo is  based on [this on](https://github.com/am11/VoidMuslWSL).
 
 KISS Linux on WSL (Windows 10 1803 or later) based on [wsldl](https://github.com/yuk7/wsldl).
 This project is based on Void Linux musl-libc. For GNU-libc, visit https://git.io/voidwsl.
 
 ![screenshot](https://raw.githubusercontent.com/wiki/yuk7/wsldl/img/Arch_Alpine_Ubuntu.png)
 
-[![Main CI Workflow](https://github.com/mmatongo/KISSWSL/actions/workflows/main.yml/badge.svg)](https://github.com/mmatongo/KISSWSL/actions/workflows/main.yml)
+[![Build Zip CI](https://github.com/mmatongo/KISSWSL/actions/workflows/build-zip.yml/badge.svg?branch=master)](https://github.com/mmatongo/KISSWSL/actions/workflows/build-zip.yml)
 [![Github All Releases](https://img.shields.io/github/downloads/mmatongo/KISSWSL/total.svg?style=flat-square)](https://github.com/mmatongo/KISSWSL/releases/latest)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 ![License](https://img.shields.io/github/license/mmatongo/KISSWSL.svg?style=flat-square)
