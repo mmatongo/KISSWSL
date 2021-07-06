@@ -3,8 +3,8 @@ LNCR_EXE=KISS.exe
 
 DLR=curl
 DLR_FLAGS=-L
-BASE_URL=https://github.com/kiss-community/repo-main/releases/download/2021.4-1/kiss-chroot-2021.4-1.tar.xz
-LNCR_ZIP_URL=https://github.com/yuk7/wsldl/releases/download/21020500/icons.zip
+BASE_URL=https://github.com/kisslinux/repo/releases/download/2021.7-3/kiss-chroot-2021.7-3.tar.xz
+LNCR_ZIP_URL=https://github.com/yuk7/wsldl/releases/download/21062500/icons.zip
 LNCR_ZIP_EXE=Void.exe
 
 all: $(OUT_ZIP)
