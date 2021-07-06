@@ -6,7 +6,7 @@ ARCH=x64
 
 DLR=curl
 DLR_FLAGS=-L
-LNCR_ZIP_EXE=Alpine.exe
+LNCR_ZIP_EXE=Void.exe
 
 all: $(OUT_ZIP)
 
