@@ -3,8 +3,8 @@ LNCR_EXE=KISS.exe
 
 DLR=curl
 DLR_FLAGS=-L
-BASE_URL=https://github.com/kisslinux/repo/releases/download/2021.7-3/kiss-chroot-2021.7-3.tar.xz
-LNCR_ZIP_URL=https://github.com/yuk7/wsldl/releases/download/21062500/icons.zip
+BASE_URL=https://github.com/kisslinux/repo/releases/download/2021.7-9/kiss-chroot-2021.7-9.tar.xz
+LNCR_ZIP_URL=https://github.com/yuk7/wsldl/releases/download/21082800/icons.zip
 LNCR_ZIP_EXE=Void.exe
 
 all: $(OUT_ZIP)
@@ -35,10 +35,11 @@ rootfs.tar.gz: rootfs
 	cd rootfs; sudo tar -zcpf ../rootfs.tar.gz `sudo ls`
 	sudo chown `id -un` rootfs.tar.gz
 
-rootfs: base.tar.xz
+rootfs: base.tar.xz profile
 	@echo -e '\e[1;31mBuilding rootfs...\e[m'
 	mkdir rootfs
 	sudo tar -xpf base.tar.xz -C rootfs
+	sudo cp -f profile rootfs/etc/profile
 	sudo cp -f /etc/resolv.conf rootfs/etc/resolv.conf
 	sudo rm rootfs/etc/resolv.conf
 	sudo chmod +x rootfs
