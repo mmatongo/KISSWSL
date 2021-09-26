@@ -9,7 +9,7 @@ jobs:
   Build:
     runs-on: ubuntu-20.04
     steps:
-    - uses: actions/checkout@2.3.4
+    - uses: actions/checkout@main
     - name: Install dependencies for build (Apt)
       shell: bash
       run: |
