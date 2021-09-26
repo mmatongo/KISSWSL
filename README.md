@@ -1,10 +1,7 @@
 # KISSWSL
 KISS Linux WSL
 
-This repo is  based on [this on](https://github.com/am11/VoidMuslWSL).
-
 KISS Linux on WSL (Windows 10 1803 or later) based on [wsldl](https://github.com/yuk7/wsldl).
-This project is based on Void Linux musl-libc. For GNU-libc, visit https://git.io/voidwsl.
 
 ![screenshot](https://raw.githubusercontent.com/wiki/yuk7/wsldl/img/Arch_Alpine_Ubuntu.png)
 
@@ -67,7 +64,7 @@ Usage :
 ```
 
 ## How-to-Build
-VoidMuslWSL can build on GNU/Linux or WSL.
+KISS WSL can build on GNU/Linux, WSL and macOS.
 
 `curl`,`zip`,`unzip`,`tar`(gnu) and `sudo` is required for build.
 ```shell
